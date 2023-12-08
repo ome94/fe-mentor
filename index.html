@@ -8,139 +8,86 @@
   <title>Frontend Mentor | News homepage</title>
   
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <link rel="stylesheet" href="./assets/fonts/inter.css">
+  <link rel="stylesheet" href="./inter.css">
+  <link rel="stylesheet" href="./styles.css">
   <style>
-    html, body {
-      margin: 0;
-      padding: 4rem;
-    }
-
-    body { /* tag selector */
-      font-family: Inter;
-      font-size: 15px;
-      color: hsl(236, 13%, 42%);
-    }
-    
-    h1 {
-      width: 45%;
-      font-size: 4rem;
-      font-weight: 800;
-    }
-
-    #banner {
-      width: 65vw;
-    }
-
-    #banner > img {
-      width: 100%;
-    }
-
-    #news {
-      background-color: hsl(240, 100%, 5%);
-      width: 22vw;
-      padding: 7.5px 15px;
-    }
-
-    #news > h2 {
-      color: hsl(35, 77%, 62%);
-    }
-
-    #news h3, button {
-      color: hsl(36, 100%, 99%);
-    }
-
-    #topics h2, #news p {
-      color:  hsl(233, 8%, 79%);
-    }
-
-    #topics h3, #banner  {
-      color: black;
-    }
-
-    button {
-      background-color: hsl(5, 85%, 63%);
-      border: none;
-      width: 12.5rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      /* padding-left: 2rem; */
-      /* padding-right: 2rem; */
-    }
-
-    ul {
-      list-style-type: none;
-    }
-
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
-    <!-- <link rel="stylesheet" href="./style.css"> -->
 
 </head>
 <body>
   <header>
+    <img src="./assets/images/logo.svg">
     <nav>
-      <img src="./assets/images/logo.svg">
       <ul>
-        <li>Home</li>
-        <li>New</li>
-        <li>Popular</li>
-        <li>Trending</li>
-        <li>Categories</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#news">New</a></li>
+        <li><a href="#"topics>Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
       </ul>
     </nav>
   </header>
-  <section id="banner">
-    <img src="./assets/images/image-web-3-desktop.jpg" alt="web3">
-    <section>
-      <h1>The Bright Future of Web 3.0?</h1>
-      <p>We dive into the next evolution of the web that claims to put 
-        the power of the platforms back into the hands of the people.
-        But is it really fulfilling its promise?</p>
-        <button>Read More</button>
+  <main>
+    <section id="banner">
+      <img src="./assets/images/image-web-3-desktop.jpg" alt="web3">
+      <article>
+        <h1>The Bright Future of Web 3.0?</h1>
+        <div>
+          <p>We dive into the next evolution of the web that claims to put 
+            the power of the platforms back into the hands of the people.
+            But is it really fulfilling its promise?</p>
+          <button><a href="#">Read More</a></button>
+        </div>
+      </article>
     </section>
-  </section>
-  <section id="news">
-    <h2>New </h2>
-    <div>
-      <h3>Hydrogen VS Electric Cars</h3>
-      <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-    </div>
-    <div>
-      <h3>The Downsides of AI Artistry</h3>
-      <p>What are the possible adverse effects of on-demand AI image generation?</p>
-    </div>
-    <div>
-      <h3>Is VC Funding Drying Up?</h3>
-      <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-    </div>
-  </section>
-  <section id="topics">
-    <div>
-      <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs">
-      <h2>01</h2>
-      <h3>Reviving Retro PCs</h3>
-      <p>What happens when old PCs are given modern upgrades?</p>
-    </div>
-    <div>
-      <img src="./assets/images/image-top-laptops.jpg" alt="Top laptops">
-      <h2>02</h2>
-      <h3>Top 10 Laptops of 2022</h3>
-      <p>Our best picks for various needs and budgets.</p>
-    </div>
-    <div>
-      <img src="./assets/images/image-gaming-growth.jpg" alt="Gaming">
-      <h2>03</h2>
-      <h3>The Growth of Gaming</h3>
-      <p>How the pandemic has sparked fresh opportunities.</p>
-    </div>
-  </section>
+    <section id="news">
+      <h2>New</h2>
+      <article>
+        <h3><a href="#">Hydrogen VS Electric Cars</a></h3>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </article>
+      <article>
+        <h3><a href="#">The Downsides of AI Artistry</a></h3>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      </article>
+      <article>
+        <h3><a href="#">Is VC Funding Drying Up?</a></h3>
+        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </article>
+    </section>
+    <section id="topics">
+      <article>
+        <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs">
+        <div>
+          <h2>01</h2>
+          <h3><a href="#">Reviving Retro PCs</a></h3>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </article>
+      <article>
+        <img src="./assets/images/image-top-laptops.jpg" alt="Top laptops">
+        <div>
+          <h2>02</h2>
+          <h3><a href="#">Top 10 Laptops of 2022</a></h3>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </article>
+      <article>
+        <img src="./assets/images/image-gaming-growth.jpg" alt="Gaming">
+        <div>
+          <h2>03</h2>
+          <h3><a href="#">The Growth of Gaming</a></h3>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </article>
+    </section>
+  </main>
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Mayowa E. Olabanji (OME)</a>.
     </div>
   </footer>
 </body>
